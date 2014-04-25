@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC38F3F158657820013509C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC38F3E158657820013509C /* UIKit.framework */; };
+		3DC38F41158657820013509C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC38F40158657820013509C /* Foundation.framework */; };
+		3DC38F43158657820013509C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC38F42158657820013509C /* CoreGraphics.framework */; };
+		3DC38F49158657820013509C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC38F47158657820013509C /* InfoPlist.strings */; };
+		3DC38F4B158657820013509C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC38F4A158657820013509C /* main.m */; };
+		3DC38F4F158657820013509C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC38F4E158657820013509C /* AppDelegate.m */; };
+		3DC38F52158657820013509C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC38F51158657820013509C /* ViewController.m */; };
+		3DC38F55158657820013509C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC38F53158657820013509C /* ViewController.xib */; };
+		3DC38F5D158657830013509C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC38F5C158657830013509C /* SenTestingKit.framework */; };
+		3DC38F5E158657830013509C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC38F3E158657820013509C /* UIKit.framework */; };
+		3DC38F5F158657830013509C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC38F40158657820013509C /* Foundation.framework */; };
+		3DC38F7515865C220013509C /* QuantLibExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DC38F7415865C220013509C /* QuantLibExample.mm */; };
+		3DC38F7615865C220013509C /* QuantLibExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DC38F7415865C220013509C /* QuantLibExample.mm */; };
+		F30944A9177DFD40007259D9 /* EquityOption_.mm in Sources */ = {isa = PBXBuildFile; fileRef = F30944A8177DFD40007259D9 /* EquityOption_.mm */; };
+		F30DAF3A179D7F7F00453C16 /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F30DAF39179D7F7F00453C16 /* Date.m */; };
+		F30DAF3D179D82D700453C16 /* DateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F30DAF3C179D82D700453C16 /* DateCategory.m */; };
+		F311CC61177D91080093C2AC /* EquityOption.xib in Resources */ = {isa = PBXBuildFile; fileRef = F311CC60177D91080093C2AC /* EquityOption.xib */; };
+		F311CC67177DC41A0093C2AC /* EquityOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F311CC66177DC41A0093C2AC /* EquityOptionViewController.m */; };
+		F319738E17CB7071005624F4 /* loadIt.xib in Resources */ = {isa = PBXBuildFile; fileRef = F319738D17CB7071005624F4 /* loadIt.xib */; };
+		F320D1B917A1712200EC6523 /* BondViewController in Resources */ = {isa = PBXBuildFile; fileRef = F320D1B817A1712200EC6523 /* BondViewController */; };
+		F33114A7179AD2FA009B51AD /* BondSetValues.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33114A6179AD2FA009B51AD /* BondSetValues.xib */; };
+		F38CD16D178C355400844B29 /* Waiting.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38CD16C178C355400844B29 /* Waiting.xib */; };
+		F38CD170178D781B00844B29 /* icon__.png in Resources */ = {isa = PBXBuildFile; fileRef = F38CD16E178D781A00844B29 /* icon__.png */; };
+		F38CD171178D781B00844B29 /* icon_.png in Resources */ = {isa = PBXBuildFile; fileRef = F38CD16F178D781B00844B29 /* icon_.png */; };
+		F38CD174178D81F700844B29 /* Bond.mm in Sources */ = {isa = PBXBuildFile; fileRef = F38CD173178D81F700844B29 /* Bond.mm */; };
+		F38CD177178D870300844B29 /* BondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38CD176178D870300844B29 /* BondViewController.m */; };
+		F38CD179178D983B00844B29 /* Bond.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38CD178178D983A00844B29 /* Bond.xib */; };
+		F38CD17B178DA11E00844B29 /* BondResult.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38CD17A178DA11D00844B29 /* BondResult.xib */; };
+		F3B5096B178474C100F43998 /* EquityOptionResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B5096A178474C100F43998 /* EquityOptionResults.xib */; };
+		F3C45287177C6E670099D7E4 /* ql.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C45286177C6E660099D7E4 /* ql.framework */; };
+		F3C4528B177C6F6E0099D7E4 /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C4528A177C6F6E0099D7E4 /* boost.framework */; };
+		F3C4528D177C703D0099D7E4 /* ql.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C4528C177C703C0099D7E4 /* ql.framework */; };
+		F3CFC1651791770A0081EC70 /* Selection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC164179177090081EC70 /* Selection.xib */; };
+		F3CFC168179177BC0081EC70 /* Selection.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC167179177BC0081EC70 /* Selection.m */; };
+		F3CFC16A17917B960081EC70 /* Select.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC16917917B950081EC70 /* Select.xib */; };
+		F3CFC16C17918EF60081EC70 /* SelectCalculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC16B17918EF50081EC70 /* SelectCalculator.xib */; };
+		F3CFC16F17918F570081EC70 /* SelectCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC16E17918F560081EC70 /* SelectCalculatorViewController.m */; };
+		F3CFC1721793D23B0081EC70 /* MarketModels.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1711793D23B0081EC70 /* MarketModels.mm */; };
+		F3CFC1751793D2D50081EC70 /* CallableBonds.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1741793D2D50081EC70 /* CallableBonds.mm */; };
+		F3CFC1781793D2F40081EC70 /* DiscreteHedging.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1771793D2F30081EC70 /* DiscreteHedging.mm */; };
+		F3CFC17B1793D30D0081EC70 /* FittedBondCurve.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC17A1793D30D0081EC70 /* FittedBondCurve.mm */; };
+		F3CFC17E1793D3530081EC70 /* ForwardRate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC17D1793D3520081EC70 /* ForwardRate.mm */; };
+		F3CFC1811793D3710081EC70 /* BermudanSwaption.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1801793D3710081EC70 /* BermudanSwaption.mm */; };
+		F3CFC1841793D38D0081EC70 /* Replication.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1831793D38D0081EC70 /* Replication.mm */; };
+		F3CFC1871793D3A00081EC70 /* Repo.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1861793D3A00081EC70 /* Repo.mm */; };
+		F3CFC18A1793D3BA0081EC70 /* Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3CFC1891793D3B90081EC70 /* Swap.mm */; };
+		F3CFC196179424F00081EC70 /* qlCalc.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC194179424F00081EC70 /* qlCalc.png */; };
+		F3CFC198179424FF0081EC70 /* qlCalc.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC197179424FD0081EC70 /* qlCalc.png */; };
+		F3CFC19A179425A50081EC70 /* ql_calc_.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC199179425A50081EC70 /* ql_calc_.png */; };
+		F3CFC19C179425AC0081EC70 /* ql_calc_.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFC19B179425A90081EC70 /* ql_calc_.png */; };
+		F3D560061794787700437EE4 /* FittedBondCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D560041794787700437EE4 /* FittedBondCurveViewController.m */; };
+		F3D560071794787700437EE4 /* FittedBondCurveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D560051794787700437EE4 /* FittedBondCurveViewController.xib */; };
+		F3D5600B1794789400437EE4 /* ForwardRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D560091794789400437EE4 /* ForwardRateViewController.m */; };
+		F3D5600C1794789400437EE4 /* ForwardRateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D5600A1794789400437EE4 /* ForwardRateViewController.xib */; };
+		F3D56010179478BB00437EE4 /* BermudanSwaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5600E179478BA00437EE4 /* BermudanSwaptionViewController.m */; };
+		F3D56011179478BB00437EE4 /* BermudanSwaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D5600F179478BB00437EE4 /* BermudanSwaptionViewController.xib */; };
+		F3D56015179478DA00437EE4 /* ReplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D56013179478DA00437EE4 /* ReplicationViewController.m */; };
+		F3D56016179478DA00437EE4 /* ReplicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D56014179478DA00437EE4 /* ReplicationViewController.xib */; };
+		F3D5601A179478EB00437EE4 /* RepoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D56018179478EB00437EE4 /* RepoViewController.m */; };
+		F3D5601B179478EB00437EE4 /* RepoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D56019179478EB00437EE4 /* RepoViewController.xib */; };
+		F3D5601F1794790100437EE4 /* SwapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5601D1794790100437EE4 /* SwapViewController.m */; };
+		F3D560201794790100437EE4 /* SwapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D5601E1794790100437EE4 /* SwapViewController.xib */; };
+		F3D5602A179479CA00437EE4 /* MarketMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D56028179479C900437EE4 /* MarketMViewController.m */; };
+		F3D5602B179479CA00437EE4 /* MarketMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D56029179479CA00437EE4 /* MarketMViewController.xib */; };
+		F3E15E4E179477060024F1A3 /* CallBond.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E15E4C179477060024F1A3 /* CallBond.m */; };
+		F3E15E4F179477060024F1A3 /* CallBond.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E15E4D179477060024F1A3 /* CallBond.xib */; };
+		F3E15E53179477340024F1A3 /* DiscreteHedgingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E15E51179477340024F1A3 /* DiscreteHedgingViewController.m */; };
+		F3E15E54179477340024F1A3 /* DiscreteHedgingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E15E52179477340024F1A3 /* DiscreteHedgingViewController.xib */; };
+		F3F1F90C17C636A200495DB8 /* DateEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F1F90A17C636A200495DB8 /* DateEditorViewController.m */; };
+		F3F1F90D17C636A200495DB8 /* DateEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F1F90B17C636A200495DB8 /* DateEditorViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC38F60158657830013509C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC38F31158657820013509C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC38F39158657820013509C;
+			remoteInfo = FXVanillaSwapExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DC38F3A158657820013509C /* QuantLibExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantLibExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC38F3E158657820013509C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DC38F40158657820013509C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DC38F42158657820013509C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DC38F46158657820013509C /* QuantLibExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuantLibExample-Info.plist"; sourceTree = "<group>"; };
+		3DC38F48158657820013509C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DC38F4A158657820013509C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DC38F4C158657820013509C /* QuantLibExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuantLibExample-Prefix.pch"; sourceTree = "<group>"; };
+		3DC38F4D158657820013509C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DC38F4E158657820013509C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DC38F50158657820013509C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DC38F51158657820013509C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DC38F54158657820013509C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3DC38F5B158657830013509C /* QuantLibExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuantLibExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC38F5C158657830013509C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3DC38F7315865C220013509C /* QuantLibExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuantLibExample.h; sourceTree = "<group>"; };
+		3DC38F7415865C220013509C /* QuantLibExample.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QuantLibExample.mm; sourceTree = "<group>"; };
+		F30944A7177DFD40007259D9 /* EquityOption_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquityOption_.h; sourceTree = "<group>"; };
+		F30944A8177DFD40007259D9 /* EquityOption_.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EquityOption_.mm; sourceTree = "<group>"; };
+		F30DAF38179D7F7F00453C16 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
+		F30DAF39179D7F7F00453C16 /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
+		F30DAF3B179D82D700453C16 /* DateCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCategory.h; sourceTree = "<group>"; };
+		F30DAF3C179D82D700453C16 /* DateCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCategory.m; sourceTree = "<group>"; };
+		F311CC60177D91080093C2AC /* EquityOption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EquityOption.xib; sourceTree = "<group>"; };
+		F311CC65177DC41A0093C2AC /* EquityOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquityOptionViewController.h; sourceTree = "<group>"; };
+		F311CC66177DC41A0093C2AC /* EquityOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquityOptionViewController.m; sourceTree = "<group>"; };
+		F319738D17CB7071005624F4 /* loadIt.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loadIt.xib; sourceTree = "<group>"; };
+		F32058B11774A7150019347D /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = "../../boostoniphone-master/ios/framework/boost.framework"; sourceTree = "<group>"; };
+		F320D1B817A1712200EC6523 /* BondViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BondViewController; sourceTree = "<group>"; };
+		F33114A6179AD2FA009B51AD /* BondSetValues.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BondSetValues.xib; sourceTree = "<group>"; };
+		F38CD16C178C355400844B29 /* Waiting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Waiting.xib; sourceTree = "<group>"; };
+		F38CD16E178D781A00844B29 /* icon__.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon__.png; path = ../icon__.png; sourceTree = "<group>"; };
+		F38CD16F178D781B00844B29 /* icon_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_.png; path = ../icon_.png; sourceTree = "<group>"; };
+		F38CD172178D81F700844B29 /* Bond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bond.h; sourceTree = "<group>"; };
+		F38CD173178D81F700844B29 /* Bond.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bond.mm; sourceTree = "<group>"; };
+		F38CD175178D870300844B29 /* BondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BondViewController.h; sourceTree = "<group>"; };
+		F38CD176178D870300844B29 /* BondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BondViewController.m; sourceTree = "<group>"; };
+		F38CD178178D983A00844B29 /* Bond.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bond.xib; sourceTree = "<group>"; };
+		F38CD17A178DA11D00844B29 /* BondResult.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BondResult.xib; sourceTree = "<group>"; };
+		F3B5096A178474C100F43998 /* EquityOptionResults.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EquityOptionResults.xib; sourceTree = "<group>"; };
+		F3C45286177C6E660099D7E4 /* ql.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ql.framework; path = ../framework/ql.framework; sourceTree = "<group>"; };
+		F3C4528A177C6F6E0099D7E4 /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = "../../../../Untitled_3/backup/orig/boostoniphone-master/ios/framework/boost.framework"; sourceTree = "<group>"; };
+		F3C4528C177C703C0099D7E4 /* ql.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ql.framework; path = "../QuantLib-1.2.1/framework/ql.framework"; sourceTree = "<group>"; };
+		F3CFC164179177090081EC70 /* Selection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Selection.xib; sourceTree = "<group>"; };
+		F3CFC166179177BB0081EC70 /* Selection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selection.h; sourceTree = "<group>"; };
+		F3CFC167179177BC0081EC70 /* Selection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selection.m; sourceTree = "<group>"; };
+		F3CFC16917917B950081EC70 /* Select.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Select.xib; sourceTree = "<group>"; };
+		F3CFC16B17918EF50081EC70 /* SelectCalculator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectCalculator.xib; path = ../SelectCalculator.xib; sourceTree = "<group>"; };
+		F3CFC16D17918F550081EC70 /* SelectCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectCalculatorViewController.h; path = ../SelectCalculatorViewController.h; sourceTree = "<group>"; };
+		F3CFC16E17918F560081EC70 /* SelectCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectCalculatorViewController.m; path = ../SelectCalculatorViewController.m; sourceTree = "<group>"; };
+		F3CFC1701793D23A0081EC70 /* MarketModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketModels.h; sourceTree = "<group>"; };
+		F3CFC1711793D23B0081EC70 /* MarketModels.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MarketModels.mm; sourceTree = "<group>"; };
+		F3CFC1731793D2D40081EC70 /* CallableBonds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallableBonds.h; sourceTree = "<group>"; };
+		F3CFC1741793D2D50081EC70 /* CallableBonds.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CallableBonds.mm; sourceTree = "<group>"; };
+		F3CFC1761793D2F30081EC70 /* DiscreteHedging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscreteHedging.h; sourceTree = "<group>"; };
+		F3CFC1771793D2F30081EC70 /* DiscreteHedging.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DiscreteHedging.mm; sourceTree = "<group>"; };
+		F3CFC1791793D30C0081EC70 /* FittedBondCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FittedBondCurve.h; sourceTree = "<group>"; };
+		F3CFC17A1793D30D0081EC70 /* FittedBondCurve.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FittedBondCurve.mm; sourceTree = "<group>"; };
+		F3CFC17C1793D3520081EC70 /* ForwardRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardRate.h; sourceTree = "<group>"; };
+		F3CFC17D1793D3520081EC70 /* ForwardRate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ForwardRate.mm; sourceTree = "<group>"; };
+		F3CFC17F1793D3710081EC70 /* BermudanSwaption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BermudanSwaption.h; sourceTree = "<group>"; };
+		F3CFC1801793D3710081EC70 /* BermudanSwaption.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BermudanSwaption.mm; sourceTree = "<group>"; };
+		F3CFC1821793D38C0081EC70 /* Replication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Replication.h; sourceTree = "<group>"; };
+		F3CFC1831793D38D0081EC70 /* Replication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Replication.mm; sourceTree = "<group>"; };
+		F3CFC1851793D3A00081EC70 /* Repo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repo.h; sourceTree = "<group>"; };
+		F3CFC1861793D3A00081EC70 /* Repo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Repo.mm; sourceTree = "<group>"; };
+		F3CFC1881793D3B90081EC70 /* Swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swap.h; sourceTree = "<group>"; };
+		F3CFC1891793D3B90081EC70 /* Swap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Swap.mm; sourceTree = "<group>"; };
+		F3CFC194179424F00081EC70 /* qlCalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qlCalc.png; sourceTree = "<group>"; };
+		F3CFC197179424FD0081EC70 /* qlCalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qlCalc.png; sourceTree = "<group>"; };
+		F3CFC199179425A50081EC70 /* ql_calc_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ql_calc_.png; sourceTree = "<group>"; };
+		F3CFC19B179425A90081EC70 /* ql_calc_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ql_calc_.png; sourceTree = "<group>"; };
+		F3D560031794787700437EE4 /* FittedBondCurveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FittedBondCurveViewController.h; sourceTree = "<group>"; };
+		F3D560041794787700437EE4 /* FittedBondCurveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FittedBondCurveViewController.m; sourceTree = "<group>"; };
+		F3D560051794787700437EE4 /* FittedBondCurveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FittedBondCurveViewController.xib; sourceTree = "<group>"; };
+		F3D560081794789300437EE4 /* ForwardRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardRateViewController.h; sourceTree = "<group>"; };
+		F3D560091794789400437EE4 /* ForwardRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardRateViewController.m; sourceTree = "<group>"; };
+		F3D5600A1794789400437EE4 /* ForwardRateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForwardRateViewController.xib; sourceTree = "<group>"; };
+		F3D5600D179478BA00437EE4 /* BermudanSwaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BermudanSwaptionViewController.h; sourceTree = "<group>"; };
+		F3D5600E179478BA00437EE4 /* BermudanSwaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BermudanSwaptionViewController.m; sourceTree = "<group>"; };
+		F3D5600F179478BB00437EE4 /* BermudanSwaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BermudanSwaptionViewController.xib; sourceTree = "<group>"; };
+		F3D56012179478DA00437EE4 /* ReplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicationViewController.h; sourceTree = "<group>"; };
+		F3D56013179478DA00437EE4 /* ReplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicationViewController.m; sourceTree = "<group>"; };
+		F3D56014179478DA00437EE4 /* ReplicationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicationViewController.xib; sourceTree = "<group>"; };
+		F3D56017179478EA00437EE4 /* RepoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoViewController.h; sourceTree = "<group>"; };
+		F3D56018179478EB00437EE4 /* RepoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoViewController.m; sourceTree = "<group>"; };
+		F3D56019179478EB00437EE4 /* RepoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoViewController.xib; sourceTree = "<group>"; };
+		F3D5601C1794790100437EE4 /* SwapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapViewController.h; sourceTree = "<group>"; };
+		F3D5601D1794790100437EE4 /* SwapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapViewController.m; sourceTree = "<group>"; };
+		F3D5601E1794790100437EE4 /* SwapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwapViewController.xib; sourceTree = "<group>"; };
+		F3D56027179479C900437EE4 /* MarketMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketMViewController.h; sourceTree = "<group>"; };
+		F3D56028179479C900437EE4 /* MarketMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketMViewController.m; sourceTree = "<group>"; };
+		F3D56029179479CA00437EE4 /* MarketMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketMViewController.xib; sourceTree = "<group>"; };
+		F3E15E4B179477060024F1A3 /* CallBond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallBond.h; sourceTree = "<group>"; };
+		F3E15E4C179477060024F1A3 /* CallBond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallBond.m; sourceTree = "<group>"; };
+		F3E15E4D179477060024F1A3 /* CallBond.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallBond.xib; sourceTree = "<group>"; };
+		F3E15E50179477340024F1A3 /* DiscreteHedgingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscreteHedgingViewController.h; sourceTree = "<group>"; };
+		F3E15E51179477340024F1A3 /* DiscreteHedgingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscreteHedgingViewController.m; sourceTree = "<group>"; };
+		F3E15E52179477340024F1A3 /* DiscreteHedgingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscreteHedgingViewController.xib; sourceTree = "<group>"; };
+		F3F1F90917C636A200495DB8 /* DateEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateEditorViewController.h; sourceTree = "<group>"; };
+		F3F1F90A17C636A200495DB8 /* DateEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateEditorViewController.m; sourceTree = "<group>"; };
+		F3F1F90B17C636A200495DB8 /* DateEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateEditorViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC38F37158657820013509C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C4528D177C703D0099D7E4 /* ql.framework in Frameworks */,
+				F3C4528B177C6F6E0099D7E4 /* boost.framework in Frameworks */,
+				F3C45287177C6E670099D7E4 /* ql.framework in Frameworks */,
+				3DC38F3F158657820013509C /* UIKit.framework in Frameworks */,
+				3DC38F41158657820013509C /* Foundation.framework in Frameworks */,
+				3DC38F43158657820013509C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC38F57158657830013509C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC38F5D158657830013509C /* SenTestingKit.framework in Frameworks */,
+				3DC38F5E158657830013509C /* UIKit.framework in Frameworks */,
+				3DC38F5F158657830013509C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC38F2F158657820013509C = {
+			isa = PBXGroup;
+			children = (
+				F3CFC19B179425A90081EC70 /* ql_calc_.png */,
+				F3CFC197179424FD0081EC70 /* qlCalc.png */,
+				F3C4528C177C703C0099D7E4 /* ql.framework */,
+				F3C4528A177C6F6E0099D7E4 /* boost.framework */,
+				F3C45286177C6E660099D7E4 /* ql.framework */,
+				3DC38F44158657820013509C /* QuantLibExample */,
+				3DC38F62158657830013509C /* QuantLibExampleTests */,
+				3DC38F3D158657820013509C /* Frameworks */,
+				3DC38F3B158657820013509C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC38F3B158657820013509C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC38F3A158657820013509C /* QuantLibExample.app */,
+				3DC38F5B158657830013509C /* QuantLibExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC38F3D158657820013509C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F32058B11774A7150019347D /* boost.framework */,
+				3DC38F3E158657820013509C /* UIKit.framework */,
+				3DC38F40158657820013509C /* Foundation.framework */,
+				3DC38F42158657820013509C /* CoreGraphics.framework */,
+				3DC38F5C158657830013509C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC38F44158657820013509C /* QuantLibExample */ = {
+			isa = PBXGroup;
+			children = (
+				F3E15E41179475DE0024F1A3 /* cons */,
+				F3CFC18C1793D4060081EC70 /* Examples */,
+				F3CFC18B1793D3C40081EC70 /* UI */,
+				3DC38F4D158657820013509C /* AppDelegate.h */,
+				3DC38F4E158657820013509C /* AppDelegate.m */,
+				3DC38F50158657820013509C /* ViewController.h */,
+				3DC38F51158657820013509C /* ViewController.m */,
+				3DC38F7315865C220013509C /* QuantLibExample.h */,
+				3DC38F7415865C220013509C /* QuantLibExample.mm */,
+				F311CC65177DC41A0093C2AC /* EquityOptionViewController.h */,
+				F311CC66177DC41A0093C2AC /* EquityOptionViewController.m */,
+				F3CFC16D17918F550081EC70 /* SelectCalculatorViewController.h */,
+				F3CFC16E17918F560081EC70 /* SelectCalculatorViewController.m */,
+				3DC38F45158657820013509C /* Supporting Files */,
+				F38CD175178D870300844B29 /* BondViewController.h */,
+				F38CD176178D870300844B29 /* BondViewController.m */,
+				F320D1B817A1712200EC6523 /* BondViewController */,
+				F3CFC166179177BB0081EC70 /* Selection.h */,
+				F3CFC167179177BC0081EC70 /* Selection.m */,
+				F30DAF38179D7F7F00453C16 /* Date.h */,
+				F30DAF39179D7F7F00453C16 /* Date.m */,
+				F30DAF3B179D82D700453C16 /* DateCategory.h */,
+				F30DAF3C179D82D700453C16 /* DateCategory.m */,
+			);
+			name = QuantLibExample;
+			path = FXVanillaSwapExample;
+			sourceTree = "<group>";
+		};
+		3DC38F45158657820013509C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFC199179425A50081EC70 /* ql_calc_.png */,
+				F3CFC194179424F00081EC70 /* qlCalc.png */,
+				F38CD16E178D781A00844B29 /* icon__.png */,
+				F38CD16F178D781B00844B29 /* icon_.png */,
+				3DC38F46158657820013509C /* QuantLibExample-Info.plist */,
+				3DC38F47158657820013509C /* InfoPlist.strings */,
+				3DC38F4A158657820013509C /* main.m */,
+				3DC38F4C158657820013509C /* QuantLibExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC38F62158657830013509C /* QuantLibExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC38F63158657830013509C /* Supporting Files */,
+			);
+			name = QuantLibExampleTests;
+			path = FXVanillaSwapExampleTests;
+			sourceTree = "<group>";
+		};
+		3DC38F63158657830013509C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3CFC18B1793D3C40081EC70 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3DC38F53158657820013509C /* ViewController.xib */,
+				F311CC60177D91080093C2AC /* EquityOption.xib */,
+				F3CFC16B17918EF50081EC70 /* SelectCalculator.xib */,
+				F3B5096A178474C100F43998 /* EquityOptionResults.xib */,
+				F38CD16C178C355400844B29 /* Waiting.xib */,
+				F38CD178178D983A00844B29 /* Bond.xib */,
+				F38CD17A178DA11D00844B29 /* BondResult.xib */,
+				F3CFC164179177090081EC70 /* Selection.xib */,
+				F3CFC16917917B950081EC70 /* Select.xib */,
+				F319738D17CB7071005624F4 /* loadIt.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F3CFC18C1793D4060081EC70 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				F30944A7177DFD40007259D9 /* EquityOption_.h */,
+				F30944A8177DFD40007259D9 /* EquityOption_.mm */,
+				F38CD172178D81F700844B29 /* Bond.h */,
+				F38CD173178D81F700844B29 /* Bond.mm */,
+				F3CFC1701793D23A0081EC70 /* MarketModels.h */,
+				F3CFC1711793D23B0081EC70 /* MarketModels.mm */,
+				F3CFC1731793D2D40081EC70 /* CallableBonds.h */,
+				F3CFC1741793D2D50081EC70 /* CallableBonds.mm */,
+				F3CFC1761793D2F30081EC70 /* DiscreteHedging.h */,
+				F3CFC1771793D2F30081EC70 /* DiscreteHedging.mm */,
+				F3CFC1791793D30C0081EC70 /* FittedBondCurve.h */,
+				F3CFC17A1793D30D0081EC70 /* FittedBondCurve.mm */,
+				F3CFC17C1793D3520081EC70 /* ForwardRate.h */,
+				F3CFC17D1793D3520081EC70 /* ForwardRate.mm */,
+				F3CFC17F1793D3710081EC70 /* BermudanSwaption.h */,
+				F3CFC1801793D3710081EC70 /* BermudanSwaption.mm */,
+				F3CFC1821793D38C0081EC70 /* Replication.h */,
+				F3CFC1831793D38D0081EC70 /* Replication.mm */,
+				F3CFC1851793D3A00081EC70 /* Repo.h */,
+				F3CFC1861793D3A00081EC70 /* Repo.mm */,
+				F3CFC1881793D3B90081EC70 /* Swap.h */,
+				F3CFC1891793D3B90081EC70 /* Swap.mm */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		F3E15E41179475DE0024F1A3 /* cons */ = {
+			isa = PBXGroup;
+			children = (
+				F3E15E4B179477060024F1A3 /* CallBond.h */,
+				F3E15E4C179477060024F1A3 /* CallBond.m */,
+				F3E15E4D179477060024F1A3 /* CallBond.xib */,
+				F33114A6179AD2FA009B51AD /* BondSetValues.xib */,
+				F3D5600D179478BA00437EE4 /* BermudanSwaptionViewController.h */,
+				F3D5600E179478BA00437EE4 /* BermudanSwaptionViewController.m */,
+				F3D5600F179478BB00437EE4 /* BermudanSwaptionViewController.xib */,
+				F3E15E50179477340024F1A3 /* DiscreteHedgingViewController.h */,
+				F3E15E51179477340024F1A3 /* DiscreteHedgingViewController.m */,
+				F3E15E52179477340024F1A3 /* DiscreteHedgingViewController.xib */,
+				F3D560031794787700437EE4 /* FittedBondCurveViewController.h */,
+				F3D560041794787700437EE4 /* FittedBondCurveViewController.m */,
+				F3D560051794787700437EE4 /* FittedBondCurveViewController.xib */,
+				F3D560081794789300437EE4 /* ForwardRateViewController.h */,
+				F3D560091794789400437EE4 /* ForwardRateViewController.m */,
+				F3D5600A1794789400437EE4 /* ForwardRateViewController.xib */,
+				F3D56012179478DA00437EE4 /* ReplicationViewController.h */,
+				F3D56013179478DA00437EE4 /* ReplicationViewController.m */,
+				F3D56014179478DA00437EE4 /* ReplicationViewController.xib */,
+				F3D56017179478EA00437EE4 /* RepoViewController.h */,
+				F3D56018179478EB00437EE4 /* RepoViewController.m */,
+				F3D56019179478EB00437EE4 /* RepoViewController.xib */,
+				F3D5601C1794790100437EE4 /* SwapViewController.h */,
+				F3D5601D1794790100437EE4 /* SwapViewController.m */,
+				F3D5601E1794790100437EE4 /* SwapViewController.xib */,
+				F3D56027179479C900437EE4 /* MarketMViewController.h */,
+				F3D56028179479C900437EE4 /* MarketMViewController.m */,
+				F3D56029179479CA00437EE4 /* MarketMViewController.xib */,
+				F3F1F90917C636A200495DB8 /* DateEditorViewController.h */,
+				F3F1F90A17C636A200495DB8 /* DateEditorViewController.m */,
+				F3F1F90B17C636A200495DB8 /* DateEditorViewController.xib */,
+			);
+			name = cons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC38F39158657820013509C /* QuantLibExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC38F6D158657830013509C /* Build configuration list for PBXNativeTarget "QuantLibExample" */;
+			buildPhases = (
+				3DC38F36158657820013509C /* Sources */,
+				3DC38F37158657820013509C /* Frameworks */,
+				3DC38F38158657820013509C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantLibExample;
+			productName = FXVanillaSwapExample;
+			productReference = 3DC38F3A158657820013509C /* QuantLibExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC38F5A158657830013509C /* QuantLibExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC38F70158657830013509C /* Build configuration list for PBXNativeTarget "QuantLibExampleTests" */;
+			buildPhases = (
+				3DC38F56158657830013509C /* Sources */,
+				3DC38F57158657830013509C /* Frameworks */,
+				3DC38F58158657830013509C /* Resources */,
+				3DC38F59158657830013509C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC38F61158657830013509C /* PBXTargetDependency */,
+			);
+			name = QuantLibExampleTests;
+			productName = FXVanillaSwapExampleTests;
+			productReference = 3DC38F5B158657830013509C /* QuantLibExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC38F31158657820013509C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Striding Edge Technologies";
+			};
+			buildConfigurationList = 3DC38F34158657820013509C /* Build configuration list for PBXProject "QuantLibExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DC38F2F158657820013509C;
+			productRefGroup = 3DC38F3B158657820013509C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC38F39158657820013509C /* QuantLibExample */,
+				3DC38F5A158657830013509C /* QuantLibExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC38F38158657820013509C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC38F49158657820013509C /* InfoPlist.strings in Resources */,
+				3DC38F55158657820013509C /* ViewController.xib in Resources */,
+				F311CC61177D91080093C2AC /* EquityOption.xib in Resources */,
+				F3B5096B178474C100F43998 /* EquityOptionResults.xib in Resources */,
+				F38CD16D178C355400844B29 /* Waiting.xib in Resources */,
+				F38CD170178D781B00844B29 /* icon__.png in Resources */,
+				F38CD171178D781B00844B29 /* icon_.png in Resources */,
+				F38CD179178D983B00844B29 /* Bond.xib in Resources */,
+				F38CD17B178DA11E00844B29 /* BondResult.xib in Resources */,
+				F3CFC1651791770A0081EC70 /* Selection.xib in Resources */,
+				F3CFC16A17917B960081EC70 /* Select.xib in Resources */,
+				F3CFC16C17918EF60081EC70 /* SelectCalculator.xib in Resources */,
+				F3CFC196179424F00081EC70 /* qlCalc.png in Resources */,
+				F3CFC198179424FF0081EC70 /* qlCalc.png in Resources */,
+				F3CFC19A179425A50081EC70 /* ql_calc_.png in Resources */,
+				F3CFC19C179425AC0081EC70 /* ql_calc_.png in Resources */,
+				F3E15E4F179477060024F1A3 /* CallBond.xib in Resources */,
+				F3E15E54179477340024F1A3 /* DiscreteHedgingViewController.xib in Resources */,
+				F3D560071794787700437EE4 /* FittedBondCurveViewController.xib in Resources */,
+				F3D5600C1794789400437EE4 /* ForwardRateViewController.xib in Resources */,
+				F3D56011179478BB00437EE4 /* BermudanSwaptionViewController.xib in Resources */,
+				F3D56016179478DA00437EE4 /* ReplicationViewController.xib in Resources */,
+				F3D5601B179478EB00437EE4 /* RepoViewController.xib in Resources */,
+				F3D560201794790100437EE4 /* SwapViewController.xib in Resources */,
+				F3D5602B179479CA00437EE4 /* MarketMViewController.xib in Resources */,
+				F33114A7179AD2FA009B51AD /* BondSetValues.xib in Resources */,
+				F320D1B917A1712200EC6523 /* BondViewController in Resources */,
+				F3F1F90D17C636A200495DB8 /* DateEditorViewController.xib in Resources */,
+				F319738E17CB7071005624F4 /* loadIt.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC38F58158657830013509C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DC38F59158657830013509C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC38F36158657820013509C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC38F4B158657820013509C /* main.m in Sources */,
+				3DC38F4F158657820013509C /* AppDelegate.m in Sources */,
+				3DC38F52158657820013509C /* ViewController.m in Sources */,
+				3DC38F7515865C220013509C /* QuantLibExample.mm in Sources */,
+				F311CC67177DC41A0093C2AC /* EquityOptionViewController.m in Sources */,
+				F30944A9177DFD40007259D9 /* EquityOption_.mm in Sources */,
+				F38CD174178D81F700844B29 /* Bond.mm in Sources */,
+				F38CD177178D870300844B29 /* BondViewController.m in Sources */,
+				F3CFC168179177BC0081EC70 /* Selection.m in Sources */,
+				F3CFC16F17918F570081EC70 /* SelectCalculatorViewController.m in Sources */,
+				F3CFC1721793D23B0081EC70 /* MarketModels.mm in Sources */,
+				F3CFC1751793D2D50081EC70 /* CallableBonds.mm in Sources */,
+				F3CFC1781793D2F40081EC70 /* DiscreteHedging.mm in Sources */,
+				F3CFC17B1793D30D0081EC70 /* FittedBondCurve.mm in Sources */,
+				F3CFC17E1793D3530081EC70 /* ForwardRate.mm in Sources */,
+				F3CFC1811793D3710081EC70 /* BermudanSwaption.mm in Sources */,
+				F3CFC1841793D38D0081EC70 /* Replication.mm in Sources */,
+				F3CFC1871793D3A00081EC70 /* Repo.mm in Sources */,
+				F3CFC18A1793D3BA0081EC70 /* Swap.mm in Sources */,
+				F3E15E4E179477060024F1A3 /* CallBond.m in Sources */,
+				F3E15E53179477340024F1A3 /* DiscreteHedgingViewController.m in Sources */,
+				F3D560061794787700437EE4 /* FittedBondCurveViewController.m in Sources */,
+				F3D5600B1794789400437EE4 /* ForwardRateViewController.m in Sources */,
+				F3D56010179478BB00437EE4 /* BermudanSwaptionViewController.m in Sources */,
+				F3D56015179478DA00437EE4 /* ReplicationViewController.m in Sources */,
+				F3D5601A179478EB00437EE4 /* RepoViewController.m in Sources */,
+				F3D5601F1794790100437EE4 /* SwapViewController.m in Sources */,
+				F3D5602A179479CA00437EE4 /* MarketMViewController.m in Sources */,
+				F30DAF3A179D7F7F00453C16 /* Date.m in Sources */,
+				F30DAF3D179D82D700453C16 /* DateCategory.m in Sources */,
+				F3F1F90C17C636A200495DB8 /* DateEditorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC38F56158657830013509C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC38F7615865C220013509C /* QuantLibExample.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC38F61158657830013509C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC38F39158657820013509C /* QuantLibExample */;
+			targetProxy = 3DC38F60158657830013509C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC38F47158657820013509C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC38F48158657820013509C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DC38F53158657820013509C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC38F54158657820013509C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC38F6B158657830013509C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Herznote GbR";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$HOME/frameworks/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E45DB1E5-AA3D-4B8D-AF05-1475917358C0";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3DC38F6C158657830013509C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Herznote GbR";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$HOME/frameworks/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "E45DB1E5-AA3D-4B8D-AF05-1475917358C0";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC38F6E158657830013509C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"\\\"$(SRCROOT)/../framework\\\"",
+					"\\\"$(SRCROOT)/../../boostoniphone-master/framework\\\"",
+					"\\\"$(SRCROOT)/../../boostoniphone-master/ios/framework\\\"",
+					"$(SRCROOT)/../QuantLib-1.2.1/framework",
+					"$(SRCROOT)/../../boostoniphone-master/ios/framework",
+					"\"$(SRCROOT)/../framework\"",
+					"\"$(SRCROOT)/../../../../Untitled_3/backup/orig/boostoniphone-master/ios/framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXVanillaSwapExample/QuantLibExample-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "FXVanillaSwapExample/QuantLibExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = QuantLibExample;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DC38F6F158657830013509C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../frameworks\\\"",
+					"\\\"$(SRCROOT)/../../boostoniphone-master/framework\\\"",
+					"\\\"$(SRCROOT)/../framework\\\"",
+					"\\\"$(SRCROOT)/../../boostoniphone-master/ios/framework\\\"",
+					"$(SRCROOT)/../QuantLib-1.2.1/framework",
+					"$(SRCROOT)/../../boostoniphone-master/ios/framework",
+					"\"$(SRCROOT)/../framework\"",
+					"\"$(SRCROOT)/../../../../Untitled_3/backup/orig/boostoniphone-master/ios/framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXVanillaSwapExample/QuantLibExample-Prefix.pch";
+				INFOPLIST_FILE = "FXVanillaSwapExample/QuantLibExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = QuantLibExample;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DC38F71158657830013509C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXVanillaSwapExample.app/FXVanillaSwapExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXVanillaSwapExample/FXVanillaSwapExample-Prefix.pch";
+				INFOPLIST_FILE = "FXVanillaSwapExampleTests/QuantLibExampleTests-Info.plist";
+				PRODUCT_NAME = QuantLibExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3DC38F72158657830013509C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXVanillaSwapExample.app/FXVanillaSwapExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXVanillaSwapExample/FXVanillaSwapExample-Prefix.pch";
+				INFOPLIST_FILE = "FXVanillaSwapExampleTests/QuantLibExampleTests-Info.plist";
+				PRODUCT_NAME = QuantLibExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC38F34158657820013509C /* Build configuration list for PBXProject "QuantLibExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC38F6B158657830013509C /* Debug */,
+				3DC38F6C158657830013509C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC38F6D158657830013509C /* Build configuration list for PBXNativeTarget "QuantLibExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC38F6E158657830013509C /* Debug */,
+				3DC38F6F158657830013509C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC38F70158657830013509C /* Build configuration list for PBXNativeTarget "QuantLibExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC38F71158657830013509C /* Debug */,
+				3DC38F72158657830013509C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC38F31158657820013509C /* Project object */;
+}
